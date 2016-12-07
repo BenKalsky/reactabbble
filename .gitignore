@@ -1,5 +1,5 @@
-node_modules
 public
 *.log
-build
 .DS_Store
+/app/build/
+/node_modules/
