@@ -1,7 +1,7 @@
 {
-  "name": "react-portfolio",
+  "name": "reactabbble",
   "version": "1.0.0",
-  "description": "A React.js based portfolio.",
+  "description": "ReactJS + Dribbble API portfolio.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "completed": "./node_modules/.bin/gulp --gulpfile completed/gulpfile.js"
   },
   "author": "Ben Kalsky",
-  "repository": "https://github.com/benkalsky/react-portfolio",
+  "repository": "https://github.com/benkalsky/reactabbble",
   "license": "MIT",
   "dependencies": {
     "jquery": "^2.1.4",
