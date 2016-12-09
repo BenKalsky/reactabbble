@@ -3,8 +3,8 @@
 var React = require('react');
 window.jQuery = require('jquery');
 var jribbble = require('jribbble');
-var data = require('./sample-api');
-var site = require('./site');
+var data = require('./../data/sample-api');
+var site = require('./../data/site');
 var Sidebar = require('./Sidebar');
 var Work = require('./Work');
 
