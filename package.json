@@ -2,11 +2,10 @@
   "name": "reactabbble",
   "version": "1.0.0",
   "description": "ReactJS + Dribbble API portfolio.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/gulp --gulpfile app/gulpfile.js",
-    "completed": "./node_modules/.bin/gulp --gulpfile completed/gulpfile.js"
+    "start": "./node_modules/.bin/gulp --gulpfile ./gulpfile.js"
   },
   "author": "Ben Kalsky",
   "repository": "https://github.com/benkalsky/reactabbble",

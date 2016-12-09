@@ -39,21 +39,21 @@ gulp.task('scripts', function() {
       this.emit('end');
     })
     .pipe(source(entryFile))
-    .pipe(rename('index.js'))
+    .pipe(rename('app.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({
       loadMaps: true
     }))
     .pipe(uglify({compress: true, mangle: true}))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./build/'))
+    .pipe(gulp.dest('./js/'))
 });
 
 // SASS to CSS (not important to this workshop)
 gulp.task('sass', function () {
-  gulp.src('../sass/**/*.scss')
+  gulp.src('./sass/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest('./build/css/'));
+    .pipe(gulp.dest('./css/'));
 });
 
 // BrowserSync (our local webserver)
