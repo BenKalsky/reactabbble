@@ -67,7 +67,7 @@ gulp.task('browser-sync', function() {
 // We're watching the JSX and SCSS files for changes
 gulp.task('watch', function() {
   gulp.watch(['./jsx/**/*'], ['lint', 'scripts']);
-  gulp.watch('../sass/**/*', ['sass']);
+  gulp.watch(['./sass/**/*'], ['sass']);
 });
 
 // Get smarter errors...
