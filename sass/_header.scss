@@ -1,23 +1,104 @@
-@include parallax-init;
-
-.header {
-  position: relative;
-
-  .background {
-    //background: url('http://benkalsky.github.io/images/intro-bg.jpg') 0 0 repeat fixed;
-    background: url('http://benkalsky.github.io/images/intro-bg.jpg') no-repeat 50% 50%;
-    background-size: cover;
-    top: -20%;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    padding-top: 20%;
-    position: absolute;
-    z-index: -900;
-    text-align: center;
-    @include parallax(-.9);
-  }
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  font-size: 120%;
+  line-height: 1.625;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Helvetica Neue, Helvetica, Arial, sans-serif;
+  -webkit-perspective: 1px;
+  -moz-perspective: 1px;
+  -ms-perspective: 1px;
+  -o-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+body * {
+  -webkit-perspective: 1px;
+  -moz-perspective: 1px;
+  -ms-perspective: 1px;
+  -o-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+hr {
+  margin: 4em 0;
+}
+
+.page {
+  padding: 20px 20%;
+  position: relative;
+  top: 650px;
+  background-color: white;
+}
+
+.masthead {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  padding-top: 20%;
+  background: url('http://benkalsky.github.io/images/intro-bg.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  -webkit-transform: translateZ(-0.9px) scale(1.9);
+  -moz-transform: translateZ(-0.9px) scale(1.9);
+  -ms-transform: translateZ(-0.9px) scale(1.9);
+  -o-transform: translateZ(-0.9px) scale(1.9);
+  transform: translateZ(-0.9px) scale(1.9);
+  z-index: -900;
+  text-align: center;
+}
+
+
+
+
+
+//@include parallax-init;
+
+//.header {
+//  position: relative;
+//
+//  .background {
+//    //background: url('http://benkalsky.github.io/images/intro-bg.jpg') 0 0 repeat fixed;
+//    background: url('http://benkalsky.github.io/images/intro-bg.jpg') no-repeat 50% 50%;
+//    background-size: cover;
+//    top: -20%;
+//    left: 0;
+//    width: 100%;
+//    height: 60%;
+//    padding-top: 20%;
+//    position: absolute;
+//    z-index: -900;
+//    text-align: center;
+//    @include parallax(-.9);
+//  }
+//}
 
 //.parallax {
 //  perspective: 1px;
