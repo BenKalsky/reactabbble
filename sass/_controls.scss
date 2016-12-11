@@ -1,0 +1,20 @@
+.controls {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  button {
+    float: left;
+    margin-right: 10px;
+  }
+
+  select {
+    float: right;
+  }
+
+  &:after { // clearfix
+    display: table;
+    clear: both;
+    content: "";
+  }
+}

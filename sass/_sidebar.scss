@@ -1,0 +1,26 @@
+.sidebar {
+  float: left;
+  width: $sidebar-width;
+
+  .sidebar-bio {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .sidebar-info {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid $border;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .sidebar-copyright {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid $border;
+    color: rgba($primary, .3);
+  }
+}

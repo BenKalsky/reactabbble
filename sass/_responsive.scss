@@ -1,0 +1,14 @@
+@media screen and (max-width: $content-width) {
+  .app {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .sidebar,
+  .work {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+}

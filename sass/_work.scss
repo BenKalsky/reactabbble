@@ -1,0 +1,45 @@
+.work {
+  float: left;
+  padding-left: 60px;
+  max-width: $content-width - $sidebar-width;
+
+  .work-item {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 30px;
+    text-align: center;
+
+    &:nth-of-type(odd) {
+      margin-right: 4%;
+    }
+
+    &.list { // For ListLayout
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid $border;
+      text-align: left;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

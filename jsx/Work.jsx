@@ -25,14 +25,7 @@ var Work = React.createClass({
 
     var shotData = this.props.shots.map(function(shot) {
       return (
-        <WorkItem
-          image={ shot.images.normal }
-          title={ shot.title }
-          description={ shot.description }
-          likes={ shot.likes_count }
-          layout={ layout }
-          key={ shot.id }
-        />
+        <WorkItem image={ shot.images.normal } title={ shot.title } description={ shot.description } likes={ shot.likes_count } layout={ layout } key={ shot.id }/>
       );
     });
 

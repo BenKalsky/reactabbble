@@ -1,0 +1,57 @@
+@include parallax-init;
+
+.header {
+  position: relative;
+
+  .background {
+    //background: url('http://benkalsky.github.io/images/intro-bg.jpg') 0 0 repeat fixed;
+    background: url('http://benkalsky.github.io/images/intro-bg.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    padding-top: 20%;
+    position: absolute;
+    z-index: -900;
+    text-align: center;
+    @include parallax(-.9);
+  }
+}
+
+//.parallax {
+//  perspective: 1px;
+//  height: 100vh;
+//  overflow-x: hidden;
+//  overflow-y: auto;
+//  perspective-origin-x: 100%;
+//
+//  .parallax__group {
+//    position: relative;
+//    height: 100vh;
+//    transform-style: preserve-3d;
+//
+//    .parallax__layer {
+//      overflow: hidden;
+//      position: fixed;
+//      top: 0;
+//      right: 0;
+//      bottom: 0;
+//      left: 0;
+//      transform-origin-x: 100%;
+//
+//      &--base {
+//        transform: translateZ(0);
+//        height: 50%; /* Now the background is only 50% height */
+//        transform-origin: center 100%;
+//        background: url('http://benkalsky.github.io/images/intro-bg.jpg') 0 0 repeat fixed;
+//      }
+//      &--back {
+//        transform: translateZ(-1px) scale(2);
+//      }
+//      &--deep {
+//        transform: translateZ(-2px) scale(3);
+//      }
+//    }
+//  }
+//}

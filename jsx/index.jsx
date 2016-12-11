@@ -5,6 +5,8 @@ window.jQuery = require('jquery');
 var jribbble = require('jribbble');
 var data = require('./../data/sample-api');
 var site = require('./../data/site');
+var Header = require('./Header');
+var Page = require('./Page');
 var Sidebar = require('./Sidebar');
 var Work = require('./Work');
 
@@ -32,16 +34,8 @@ var App = React.createClass({
   render: function() {
     return (
       <div className="app">
-        <Sidebar
-          name={ this.state.site.name }
-          tagline={ this.state.site.tagline }
-          bio={ this.state.site.bio }
-        />
-        <Work
-          shots={ this.state.shots }
-          layout={ this.state.layout }
-          changeLayout={ this.changeLayout }
-        />
+        <Header/>
+        <Page/>
       </div>
     );
   }
