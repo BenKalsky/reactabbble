@@ -17,8 +17,8 @@
   "devDependencies": {
     "babel-preset-react": "^6.3.13",
     "babelify": "^8.0.0",
+    "browser-sync": "^2.23.5",
     "browserify": "^15.0.0",
-    "browser-sync": "^2.23.2",
     "gulp": "^3.9.0",
     "gulp-eslint": "^4.0.1",
     "gulp-notify": "^3.0.0",
