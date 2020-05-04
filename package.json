@@ -11,7 +11,7 @@
   "repository": "https://github.com/benkalsky/reactabbble",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.1",
     "jribbble": "^2.0.4"
   },
   "devDependencies": {
